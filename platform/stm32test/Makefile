@@ -1,0 +1,23 @@
+# $Id: Makefile.sky,v 1.18 2008/09/29 12:38:18 joxe Exp $
+
+
+ARCH = enc28j60.c
+
+ARCH += $(ADDITIONNAL_DRIVERS)
+
+UIPDRIVERS = me.c me_tabs.c slip.c crc16.c
+
+CONTIKI_TARGET_DIRS = . dev
+CONTIKI_DRIVERS_DIR = $(STM32F103_DRIVERS_PATH)
+
+ifndef CONTIKI_TARGET_MAIN
+CONTIKI_TARGET_MAIN = contiki-main.c
+endif
+
+CONTIKI_TARGET_SOURCEFILES +=
+
+CONTIKI_TARGET_SOURCEFILES += $(ARCH) $(UIPDRIVERS) $(CONTIKI_TARGET_MAIN)
+
+MCU=stm32f10x
+include $(CONTIKI)/cpu/arm/stm32103/Makefile.stm32f103
+

@@ -1,0 +1,1739 @@
+Archive member included to satisfy reference by file (symbol)
+
+contiki-native.a(contiki-main.o)
+                              /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o (main)
+contiki-native.a(button-sensor.o)
+                              contiki-native.a(contiki-main.o) (button_sensor)
+contiki-native.a(pir-sensor.o)
+                              contiki-native.a(contiki-main.o) (pir_sensor)
+contiki-native.a(vib-sensor.o)
+                              contiki-native.a(contiki-main.o) (vib_sensor)
+contiki-native.a(sensors.o)   contiki-native.a(button-sensor.o) (sensors_changed)
+contiki-native.a(autostart.o)
+                              contiki-native.a(contiki-main.o) (autostart_start)
+contiki-native.a(ctimer.o)    contiki-native.a(contiki-main.o) (ctimer_init)
+contiki-native.a(etimer.o)    contiki-native.a(contiki-main.o) (etimer_request_poll)
+contiki-native.a(process.o)   contiki-native.a(ctimer.o) (process_current)
+contiki-native.a(rtimer.o)    contiki-native.a(contiki-main.o) (rtimer_init)
+contiki-native.a(timer.o)     contiki-native.a(etimer.o) (timer_set)
+contiki-native.a(serial-line.o)
+                              contiki-native.a(contiki-main.o) (serial_line_input_byte)
+contiki-native.a(list.o)      contiki-native.a(ctimer.o) (list_init)
+contiki-native.a(ringbuf.o)   contiki-native.a(serial-line.o) (ringbuf_init)
+contiki-native.a(tcpip.o)     contiki-native.a(contiki-main.o) (tcpip_process)
+contiki-native.a(uip.o)       contiki-native.a(tcpip.o) (uip_aligned_buf)
+contiki-native.a(linkaddr.o)  contiki-native.a(contiki-main.o) (linkaddr_set_node_addr)
+contiki-native.a(netstack.o)  contiki-native.a(contiki-main.o) (netstack_init)
+contiki-native.a(rime.o)      contiki-native.a(contiki-main.o) (rime_driver)
+contiki-native.a(nullmac.o)   contiki-native.a(contiki-main.o) (nullmac_driver)
+contiki-native.a(nullrdc.o)   contiki-native.a(contiki-main.o) (nullrdc_driver)
+contiki-native.a(clock.o)     contiki-native.a(etimer.o) (clock_time)
+contiki-native.a(rtimer-arch.o)
+                              contiki-native.a(rtimer.o) (rtimer_arch_init)
+contiki-native.a(nullradio.o)
+                              contiki-native.a(netstack.o) (nullradio_driver)
+contiki-native.a(packetbuf.o)
+                              contiki-native.a(nullrdc.o) (packetbuf_dataptr)
+contiki-native.a(queuebuf.o)  contiki-native.a(rime.o) (queuebuf_init)
+contiki-native.a(abc.o)       contiki-native.a(rime.o) (abc_input)
+contiki-native.a(announcement.o)
+                              contiki-native.a(rime.o) (announcement_init)
+contiki-native.a(broadcast-annou)
+                              contiki-native.a(rime.o) (broadcast_announcement_init)
+contiki-native.a(broadcast.o)
+                              contiki-native.a(broadcast-annou) (broadcast_open)
+contiki-native.a(chameleon.o)
+                              contiki-native.a(rime.o) (chameleon_init)
+contiki-native.a(channel.o)   contiki-native.a(chameleon.o) (channel_init)
+contiki-native.a(framer-nullmac.)
+                              contiki-native.a(nullrdc.o) (framer_nullmac)
+contiki-native.a(mac.o)       contiki-native.a(nullrdc.o) (mac_call_sent_callback)
+contiki-native.a(memb.o)      contiki-native.a(queuebuf.o) (memb_init)
+contiki-native.a(random.o)    contiki-native.a(broadcast-annou) (random_rand)
+contiki-native.a(chameleon-bitop)
+                              contiki-native.a(chameleon.o) (chameleon_bitopt)
+
+Merging program properties
+
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.6                     contiki-native.a(contiki-main.o) (__printf_chk@@GLIBC_2.3.4)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 hello-world.co
+ .note.gnu.property
+                0x0000000000000000       0x20 hello-world.co
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(contiki-main.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(contiki-main.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(button-sensor.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(button-sensor.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(pir-sensor.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(pir-sensor.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(vib-sensor.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(vib-sensor.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(sensors.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(sensors.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(autostart.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(autostart.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(ctimer.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(ctimer.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(etimer.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(etimer.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(process.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(process.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(rtimer.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(rtimer.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(timer.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(timer.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(serial-line.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(serial-line.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(list.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(list.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(ringbuf.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(ringbuf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(tcpip.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(tcpip.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(uip.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(uip.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(linkaddr.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(linkaddr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(netstack.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(netstack.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(rime.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(rime.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(nullmac.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(nullmac.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(nullrdc.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(nullrdc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(clock.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(clock.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(rtimer-arch.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(rtimer-arch.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(nullradio.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(nullradio.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(packetbuf.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(packetbuf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(queuebuf.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(queuebuf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(abc.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(abc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(announcement.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(announcement.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(broadcast-annou)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(broadcast-annou)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(broadcast.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(broadcast.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(chameleon.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(chameleon.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(channel.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(channel.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(framer-nullmac.)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(framer-nullmac.)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(mac.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(mac.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(memb.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(memb.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(random.o)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(random.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 contiki-native.a(chameleon-bitop)
+ .note.gnu.property
+                0x0000000000000000       0x20 contiki-native.a(chameleon-bitop)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+LOAD hello-world.co
+LOAD contiki-native.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libncurses.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libncurses.so.6
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libtinfo.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libc.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+LOAD /lib64/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x0))
+                0x0000000000000318                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.interp         0x0000000000000318       0x1c
+ *(.interp)
+ .interp        0x0000000000000318       0x1c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.note.gnu.property
+                0x0000000000000338       0x30
+ .note.gnu.property
+                0x0000000000000338       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.note.gnu.build-id
+                0x0000000000000368       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000368       0x24 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.note.ABI-tag   0x000000000000038c       0x20
+ .note.ABI-tag  0x000000000000038c       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000000000003b0      0x7e8
+ *(.gnu.hash)
+ .gnu.hash      0x00000000000003b0      0x7e8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynsym         0x0000000000000b98     0x18f0
+ *(.dynsym)
+ .dynsym        0x0000000000000b98     0x18f0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynstr         0x0000000000002488      0xf2e
+ *(.dynstr)
+ .dynstr        0x0000000000002488      0xf2e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version    0x00000000000033b6      0x214
+ *(.gnu.version)
+ .gnu.version   0x00000000000033b6      0x214 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version_d  0x00000000000035d0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000035d0        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version_r  0x00000000000035d0       0x60
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000035d0       0x60 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.rela.dyn       0x0000000000003630      0x840
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000003630        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000003630        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.data.rel.local
+                0x0000000000003630      0x1c8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local
+                0x00000000000037f8      0x558 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.data.rel
+                0x0000000000003d50       0x48 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000003d98       0x78 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000003e10       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000003e40        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.fini_array
+                0x0000000000003e40       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.init_array
+                0x0000000000003e58       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.rela.plt       0x0000000000003e70      0x1e0
+ *(.rela.plt)
+ .rela.plt      0x0000000000003e70      0x1e0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.iplt)
+
+.relr.dyn
+ *(.relr.dyn)
+                0x0000000000005000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+
+.init           0x0000000000005000       0x1b
+ *(SORT_NONE(.init))
+ .init          0x0000000000005000       0x16 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x0000000000005000                _init
+ .init          0x0000000000005016        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x0000000000005020      0x150
+ *(.plt)
+ .plt           0x0000000000005020      0x150 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.iplt)
+
+.plt.got        0x0000000000005170       0x10
+ *(.plt.got)
+ .plt.got       0x0000000000005170       0x10 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000005170                __cxa_finalize@@GLIBC_2.2.5
+
+.plt.sec        0x0000000000005180      0x140
+ *(.plt.sec)
+ .plt.sec       0x0000000000005180      0x140 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000005180                __errno_location@@GLIBC_2.2.5
+                0x0000000000005190                strncmp@@GLIBC_2.2.5
+                0x00000000000051a0                puts@@GLIBC_2.2.5
+                0x00000000000051b0                strlen@@GLIBC_2.2.5
+                0x00000000000051c0                __stack_chk_fail@@GLIBC_2.4
+                0x00000000000051d0                gettimeofday@@GLIBC_2.2.5
+                0x00000000000051e0                memset@@GLIBC_2.2.5
+                0x00000000000051f0                read@@GLIBC_2.2.5
+                0x0000000000005200                srand@@GLIBC_2.2.5
+                0x0000000000005210                memcmp@@GLIBC_2.2.5
+                0x0000000000005220                signal@@GLIBC_2.2.5
+                0x0000000000005230                __memcpy_chk@@GLIBC_2.3.4
+                0x0000000000005240                memcpy@@GLIBC_2.14
+                0x0000000000005250                select@@GLIBC_2.2.5
+                0x0000000000005260                setitimer@@GLIBC_2.2.5
+                0x0000000000005270                __printf_chk@@GLIBC_2.3.4
+                0x0000000000005280                setvbuf@@GLIBC_2.2.5
+                0x0000000000005290                perror@@GLIBC_2.2.5
+                0x00000000000052a0                __fprintf_chk@@GLIBC_2.3.4
+                0x00000000000052b0                rand@@GLIBC_2.2.5
+
+.text           0x00000000000052c0     0x5033
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000052c0       0x26 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x00000000000052c0                _start
+ .text          0x00000000000052e6        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x00000000000052e6        0xa 
+ .text          0x00000000000052f0       0xb9 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .text          0x00000000000053a9       0x3d hello-world.co
+ .text          0x00000000000053e6      0x3d6 contiki-native.a(contiki-main.o)
+                0x0000000000005450                select_set_callback
+                0x00000000000054e1                main
+                0x000000000000575f                log_message
+                0x000000000000578f                uip_log
+ .text          0x00000000000057bc       0x37 contiki-native.a(button-sensor.o)
+                0x00000000000057da                button_press
+ .text          0x00000000000057f3       0x3e contiki-native.a(pir-sensor.o)
+                0x0000000000005812                pir_sensor_changed
+ .text          0x0000000000005831       0x3f contiki-native.a(vib-sensor.o)
+                0x0000000000005850                vib_sensor_changed
+ .text          0x0000000000005870      0x27b contiki-native.a(sensors.o)
+                0x00000000000059d5                sensors_first
+                0x00000000000059e1                sensors_next
+                0x0000000000005a26                sensors_changed
+                0x0000000000005a7c                sensors_find
+ .text          0x0000000000005aeb       0x57 contiki-native.a(autostart.o)
+                0x0000000000005aeb                autostart_start
+                0x0000000000005b19                autostart_exit
+ .text          0x0000000000005b42      0x2da contiki-native.a(ctimer.o)
+                0x0000000000005c20                ctimer_init
+                0x0000000000005c51                ctimer_set
+                0x0000000000005cc2                ctimer_reset
+                0x0000000000005d23                ctimer_restart
+                0x0000000000005d84                ctimer_stop
+                0x0000000000005dc1                ctimer_expired
+ .text          0x0000000000005e1c      0x33c contiki-native.a(etimer.o)
+                0x0000000000005e7f                etimer_request_poll
+                0x0000000000006053                etimer_set
+                0x000000000000606a                etimer_reset
+                0x0000000000006081                etimer_restart
+                0x0000000000006098                etimer_adjust
+                0x00000000000060b0                etimer_expired
+                0x00000000000060c0                etimer_expiration_time
+                0x00000000000060cc                etimer_start_time
+                0x00000000000060d4                etimer_pending
+                0x00000000000060e7                etimer_next_expiration_time
+                0x0000000000006102                etimer_stop
+ .text          0x0000000000006158      0x408 contiki-native.a(process.o)
+                0x00000000000062e1                process_alloc_event
+                0x00000000000062f6                process_exit
+                0x000000000000630f                process_init
+                0x000000000000633f                process_run
+                0x0000000000006450                process_nevents
+                0x0000000000006468                process_post
+                0x00000000000064b7                process_post_synch
+                0x00000000000064d5                process_start
+                0x000000000000652f                process_poll
+                0x0000000000006551                process_is_running
+ .text          0x0000000000006560       0x93 contiki-native.a(rtimer.o)
+                0x0000000000006560                rtimer_init
+                0x0000000000006572                rtimer_set
+                0x00000000000065b0                rtimer_run_next
+ .text          0x00000000000065f3       0x70 contiki-native.a(timer.o)
+                0x00000000000065f3                timer_set
+                0x0000000000006609                timer_reset
+                0x0000000000006615                timer_restart
+                0x0000000000006627                timer_expired
+                0x0000000000006647                timer_remaining
+ .text          0x0000000000006663      0x1b7 contiki-native.a(serial-line.o)
+                0x0000000000006770                serial_line_input_byte
+                0x00000000000067e4                serial_line_init
+ .text          0x000000000000681a      0x15e contiki-native.a(list.o)
+                0x000000000000681a                list_init
+                0x0000000000006826                list_head
+                0x000000000000682e                list_copy
+                0x0000000000006839                list_tail
+                0x0000000000006859                list_chop
+                0x0000000000006887                list_pop
+                0x000000000000689a                list_remove
+                0x00000000000068d6                list_add
+                0x0000000000006907                list_push
+                0x0000000000006925                list_length
+                0x000000000000694b                list_insert
+                0x0000000000006967                list_item_next
+ .text          0x0000000000006978       0xb3 contiki-native.a(ringbuf.o)
+                0x0000000000006978                ringbuf_init
+                0x000000000000698e                ringbuf_put
+                0x00000000000069d2                ringbuf_get
+                0x0000000000006a0a                ringbuf_size
+                0x0000000000006a16                ringbuf_elements
+ .text          0x0000000000006a2b      0x605 contiki-native.a(tcpip.o)
+                0x0000000000006a52                tcpip_output
+                0x0000000000006d22                tcpip_set_outputfunc
+                0x0000000000006d2e                tcp_unlisten
+                0x0000000000006da6                tcp_listen
+                0x0000000000006e1d                tcp_attach
+                0x0000000000006e31                udp_attach
+                0x0000000000006e45                udp_new
+                0x0000000000006e6b                udp_broadcast_new
+                0x0000000000006ece                tcpip_input
+                0x0000000000006efa                tcpip_poll_udp
+                0x0000000000006f1b                tcpip_poll_tcp
+                0x0000000000006f3c                tcp_connect
+                0x0000000000006f7a                tcpip_uipcall
+ .text          0x0000000000007030     0x170a contiki-native.a(uip.o)
+                0x00000000000070d8                uip_setipid
+                0x00000000000070e4                uip_add32
+                0x00000000000071b3                uip_chksum
+                0x00000000000071cc                uip_ipchksum
+                0x00000000000071fa                uip_tcpchksum
+                0x0000000000007209                uip_udpchksum
+                0x0000000000007218                uip_init
+                0x000000000000727c                uip_connect
+                0x00000000000073c7                uip_udp_new
+                0x00000000000074b0                uip_unlisten
+                0x000000000000750f                uip_listen
+                0x000000000000756d                uip_process
+                0x00000000000086c8                uip_htons
+                0x00000000000086d3                uip_htonl
+                0x00000000000086f3                uip_send
+ .text          0x000000000000873a       0x3e contiki-native.a(linkaddr.o)
+                0x000000000000873a                linkaddr_copy
+                0x0000000000008745                linkaddr_cmp
+                0x0000000000008764                linkaddr_set_node_addr
+ .text          0x0000000000008778       0x25 contiki-native.a(netstack.o)
+                0x0000000000008778                netstack_init
+ .text          0x000000000000879d      0x159 contiki-native.a(rime.o)
+                0x000000000000888f                rime_sniffer_add
+                0x00000000000088ab                rime_sniffer_remove
+                0x00000000000088c7                rime_output
+ .text          0x00000000000088f6       0x5b contiki-native.a(nullmac.o)
+ .text          0x0000000000008951      0x19c contiki-native.a(nullrdc.o)
+ .text          0x0000000000008aed       0xb3 contiki-native.a(clock.o)
+                0x0000000000008aed                clock_time
+                0x0000000000008b58                clock_seconds
+                0x0000000000008b9b                clock_delay
+ .text          0x0000000000008ba0       0xce contiki-native.a(rtimer-arch.o)
+                0x0000000000008bbe                rtimer_arch_init
+                0x0000000000008bdc                rtimer_arch_schedule
+ .text          0x0000000000008c6e       0x8c contiki-native.a(nullradio.o)
+ .text          0x0000000000008cfa      0x550 contiki-native.a(packetbuf.o)
+                0x0000000000008cfa                packetbuf_clear_hdr
+                0x0000000000008d06                packetbuf_copyto_hdr
+                0x0000000000008dad                packetbuf_copyto
+                0x0000000000008e94                packetbuf_hdr_remove
+                0x0000000000008ea0                packetbuf_hdrreduce
+                0x0000000000008ecf                packetbuf_set_datalen
+                0x0000000000008edb                packetbuf_dataptr
+                0x0000000000008ef3                packetbuf_hdrptr
+                0x0000000000008f09                packetbuf_is_reference
+                0x0000000000008f22                packetbuf_compact
+                0x0000000000008fa0                packetbuf_reference_ptr
+                0x0000000000008fac                packetbuf_datalen
+                0x0000000000008fb8                packetbuf_hdrlen
+                0x0000000000008fc8                packetbuf_totlen
+                0x0000000000008fe2                packetbuf_hdralloc
+                0x0000000000009029                packetbuf_attr_clear
+                0x0000000000009075                packetbuf_clear
+                0x00000000000090ae                packetbuf_copyfrom
+                0x000000000000914a                packetbuf_reference
+                0x0000000000009173                packetbuf_attr_copyto
+                0x00000000000091a5                packetbuf_attr_copyfrom
+                0x00000000000091d7                packetbuf_set_attr
+                0x00000000000091f0                packetbuf_attr
+                0x0000000000009204                packetbuf_set_addr
+                0x0000000000009230                packetbuf_addr
+ .text          0x000000000000924a      0x2b8 contiki-native.a(queuebuf.o)
+                0x000000000000924a                queuebuf_init
+                0x000000000000927b                queuebuf_new_from_packetbuf
+                0x000000000000931b                queuebuf_update_attr_from_packetbuf
+                0x000000000000933e                queuebuf_free
+                0x000000000000939d                queuebuf_to_packetbuf
+                0x0000000000009486                queuebuf_dataptr
+                0x00000000000094ca                queuebuf_datalen
+                0x00000000000094d5                queuebuf_addr
+                0x00000000000094e9                queuebuf_attr
+                0x00000000000094fd                queuebuf_debug_print
+ .text          0x0000000000009502       0x8c contiki-native.a(abc.o)
+                0x0000000000009502                abc_open
+                0x0000000000009531                abc_close
+                0x0000000000009543                abc_send
+                0x0000000000009555                abc_input
+                0x0000000000009571                abc_sent
+ .text          0x000000000000958e      0x1d3 contiki-native.a(announcement.o)
+                0x000000000000958e                announcement_init
+                0x00000000000095a7                announcement_register
+                0x00000000000095f1                announcement_remove
+                0x000000000000960d                announcement_remove_value
+                0x0000000000009646                announcement_set_value
+                0x0000000000009683                announcement_bump
+                0x00000000000096b3                announcement_listen
+                0x00000000000096cf                announcement_register_listen_callback
+                0x00000000000096db                announcement_register_observer_callback
+                0x00000000000096e7                announcement_list
+                0x0000000000009700                announcement_heard
+ .text          0x0000000000009761      0x22f contiki-native.a(broadcast-annou)
+                0x0000000000009906                broadcast_announcement_init
+                0x0000000000009953                broadcast_announcement_stop
+                0x0000000000009984                broadcast_announcement_beacon_interval
+ .text          0x0000000000009990       0xec contiki-native.a(broadcast.o)
+                0x0000000000009a11                broadcast_open
+                0x0000000000009a47                broadcast_close
+                0x0000000000009a59                broadcast_send
+ .text          0x0000000000009a7c       0x7d contiki-native.a(chameleon.o)
+                0x0000000000009a7c                chameleon_init
+                0x0000000000009a8e                chameleon_parse
+                0x0000000000009ab4                chameleon_create
+                0x0000000000009ae6                chameleon_hdrsize
+ .text          0x0000000000009af9       0xbb contiki-native.a(channel.o)
+                0x0000000000009af9                channel_init
+                0x0000000000009b12                channel_open
+                0x0000000000009b32                channel_close
+                0x0000000000009b4e                channel_lookup
+                0x0000000000009b81                channel_set_attributes
+ .text          0x0000000000009bb4       0x9c contiki-native.a(framer-nullmac.)
+ .text          0x0000000000009c50       0x1f contiki-native.a(mac.o)
+                0x0000000000009c50                mac_call_sent_callback
+ .text          0x0000000000009c6f      0x104 contiki-native.a(memb.o)
+                0x0000000000009c6f                memb_init
+                0x0000000000009ca6                memb_alloc
+                0x0000000000009ce7                memb_free
+                0x0000000000009d45                memb_inmemb
+ .text          0x0000000000009d73       0x27 contiki-native.a(random.o)
+                0x0000000000009d73                random_init
+                0x0000000000009d88                random_rand
+ .text          0x0000000000009d9a      0x559 contiki-native.a(chameleon-bitop)
+                0x0000000000009dbe                get_bits_in_byte
+                0x0000000000009df5                get_bits
+                0x000000000000a041                set_bits_in_byte
+                0x000000000000a061                set_bits
+ .text          0x000000000000a2f3        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .text          0x000000000000a2f3        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x000000000000a2f4        0xd
+ *(SORT_NONE(.fini))
+ .fini          0x000000000000a2f4        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x000000000000a2f4                _fini
+ .fini          0x000000000000a2fc        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x000000000000b000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+                0x000000000000b000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
+
+.rodata         0x000000000000b000      0x191
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x000000000000b000        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000b000                _IO_stdin_used
+ .rodata.str1.1
+                0x000000000000b004       0x22 hello-world.co
+ .rodata.str1.1
+                0x000000000000b026       0x5e contiki-native.a(contiki-main.o)
+                                         0x62 (size before relaxing)
+ .rodata.str1.1
+                0x000000000000b084        0x7 contiki-native.a(button-sensor.o)
+ .rodata.str1.1
+                0x000000000000b08b        0x4 contiki-native.a(pir-sensor.o)
+ .rodata.str1.1
+                0x000000000000b08f        0xa contiki-native.a(vib-sensor.o)
+ .rodata.str1.1
+                0x000000000000b099        0x8 contiki-native.a(sensors.o)
+ .rodata.str1.1
+                0x000000000000b0a1        0xf contiki-native.a(ctimer.o)
+ .rodata.str1.1
+                0x000000000000b0b0        0xc contiki-native.a(etimer.o)
+ .rodata.str1.1
+                0x000000000000b0bc        0xe contiki-native.a(serial-line.o)
+ .rodata.str1.1
+                0x000000000000b0ca        0xd contiki-native.a(tcpip.o)
+ *fill*         0x000000000000b0d7        0x1 
+ .rodata        0x000000000000b0d8       0x8c contiki-native.a(uip.o)
+                0x000000000000b15c                uip_all_zeroes_addr
+                0x000000000000b160                uip_broadcast_addr
+ .rodata        0x000000000000b164        0x2 contiki-native.a(linkaddr.o)
+                0x000000000000b164                linkaddr_null
+ .rodata.str1.1
+                0x000000000000b166        0x5 contiki-native.a(rime.o)
+ .rodata.str1.1
+                0x000000000000b16b        0x8 contiki-native.a(nullmac.o)
+ .rodata.str1.1
+                0x000000000000b173        0x8 contiki-native.a(nullrdc.o)
+ .rodata        0x000000000000b17b        0x2 contiki-native.a(abc.o)
+ .rodata        0x000000000000b17d        0x4 contiki-native.a(broadcast.o)
+ *fill*         0x000000000000b181        0x7 
+ .rodata        0x000000000000b188        0x9 contiki-native.a(chameleon-bitop)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000000b194      0x82c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000000b194      0x82c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000b194                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000000b9c0     0x1bd8
+ *(.eh_frame)
+ .eh_frame      0x000000000000b9c0       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x2c (size before relaxing)
+ *fill*         0x000000000000b9f0        0x0 
+ .eh_frame      0x000000000000b9f0       0x28 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000000ba18       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000ba30       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000ba48       0x30 hello-world.co
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000000ba78       0xa8 contiki-native.a(contiki-main.o)
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000000bb20       0x58 contiki-native.a(button-sensor.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000bb78       0x58 contiki-native.a(pir-sensor.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000bbd0       0x58 contiki-native.a(vib-sensor.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000bc28       0xb8 contiki-native.a(sensors.o)
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x000000000000bce0       0x38 contiki-native.a(autostart.o)
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000000bd18      0x108 contiki-native.a(ctimer.o)
+                                        0x120 (size before relaxing)
+ .eh_frame      0x000000000000be20      0x178 contiki-native.a(etimer.o)
+                                        0x190 (size before relaxing)
+ .eh_frame      0x000000000000bf98      0x160 contiki-native.a(process.o)
+                                        0x178 (size before relaxing)
+ .eh_frame      0x000000000000c0f8       0x48 contiki-native.a(rtimer.o)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x000000000000c140       0x88 contiki-native.a(timer.o)
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000000c1c8       0x68 contiki-native.a(serial-line.o)
+                                         0x80 (size before relaxing)
+ .eh_frame      0x000000000000c230      0x110 contiki-native.a(list.o)
+                                        0x128 (size before relaxing)
+ .eh_frame      0x000000000000c340       0x68 contiki-native.a(ringbuf.o)
+                                         0x80 (size before relaxing)
+ .eh_frame      0x000000000000c3a8      0x1a0 contiki-native.a(tcpip.o)
+                                        0x1b8 (size before relaxing)
+ .eh_frame      0x000000000000c548      0x1b0 contiki-native.a(uip.o)
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x000000000000c6f8       0x40 contiki-native.a(linkaddr.o)
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000000c738       0x18 contiki-native.a(netstack.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000c750       0xd0 contiki-native.a(rime.o)
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x000000000000c820       0x88 contiki-native.a(nullmac.o)
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000000c8a8       0xf0 contiki-native.a(nullrdc.o)
+                                        0x108 (size before relaxing)
+ .eh_frame      0x000000000000c998       0x50 contiki-native.a(clock.o)
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000000c9e8       0x58 contiki-native.a(rtimer-arch.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000ca40      0x118 contiki-native.a(nullradio.o)
+                                        0x130 (size before relaxing)
+ .eh_frame      0x000000000000cb58      0x260 contiki-native.a(packetbuf.o)
+                                        0x278 (size before relaxing)
+ .eh_frame      0x000000000000cdb8      0x110 contiki-native.a(queuebuf.o)
+                                        0x128 (size before relaxing)
+ .eh_frame      0x000000000000cec8       0x90 contiki-native.a(abc.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000000cf58      0x128 contiki-native.a(announcement.o)
+                                        0x140 (size before relaxing)
+ .eh_frame      0x000000000000d080      0x110 contiki-native.a(broadcast-annou)
+                                        0x128 (size before relaxing)
+ .eh_frame      0x000000000000d190       0xa0 contiki-native.a(broadcast.o)
+                                         0xb8 (size before relaxing)
+ .eh_frame      0x000000000000d230       0x78 contiki-native.a(chameleon.o)
+                                         0x90 (size before relaxing)
+ .eh_frame      0x000000000000d2a8       0x90 contiki-native.a(channel.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000000d338       0x50 contiki-native.a(framer-nullmac.)
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000000d388       0x18 contiki-native.a(mac.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000d3a0       0x58 contiki-native.a(memb.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000d3f8       0x30 contiki-native.a(random.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000000d428      0x16c contiki-native.a(chameleon-bitop)
+                                        0x188 (size before relaxing)
+ .eh_frame      0x000000000000d594        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x000000000000eb30                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x000000000000eb30        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000000eb30        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000000eb30        0x8
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x000000000000eb30        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000000eb38        0x8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x000000000000eb38        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x000000000000eb40      0x1e8
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x000000000000eb40       0x10 hello-world.co
+                0x000000000000eb40                autostart_processes
+ .data.rel.ro.local
+                0x000000000000eb50       0x10 contiki-native.a(contiki-main.o)
+ .data.rel.ro.local
+                0x000000000000eb60       0x20 contiki-native.a(button-sensor.o)
+                0x000000000000eb60                button_sensor
+ .data.rel.ro.local
+                0x000000000000eb80       0x20 contiki-native.a(pir-sensor.o)
+                0x000000000000eb80                pir_sensor
+ .data.rel.ro.local
+                0x000000000000eba0       0x20 contiki-native.a(vib-sensor.o)
+                0x000000000000eba0                vib_sensor
+ .data.rel.ro.local
+                0x000000000000ebc0       0x18 contiki-native.a(rime.o)
+                0x000000000000ebc0                rime_driver
+ *fill*         0x000000000000ebd8        0x8 
+ .data.rel.ro.local
+                0x000000000000ebe0       0x38 contiki-native.a(nullmac.o)
+                0x000000000000ebe0                nullmac_driver
+ *fill*         0x000000000000ec18        0x8 
+ .data.rel.ro.local
+                0x000000000000ec20       0x40 contiki-native.a(nullrdc.o)
+                0x000000000000ec20                nullrdc_driver
+ .data.rel.ro.local
+                0x000000000000ec60       0x70 contiki-native.a(nullradio.o)
+                0x000000000000ec60                nullradio_driver
+ .data.rel.ro.local
+                0x000000000000ecd0       0x10 contiki-native.a(broadcast-annou)
+ .data.rel.ro.local
+                0x000000000000ece0       0x10 contiki-native.a(broadcast.o)
+ .data.rel.ro.local
+                0x000000000000ecf0       0x18 contiki-native.a(framer-nullmac.)
+                0x000000000000ecf0                framer_nullmac
+ *fill*         0x000000000000ed08        0x8 
+ .data.rel.ro.local
+                0x000000000000ed10       0x18 contiki-native.a(chameleon-bitop)
+                0x000000000000ed10                chameleon_bitopt
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x000000000000ed28        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynamic        0x000000000000ed28      0x1f0
+ *(.dynamic)
+ .dynamic       0x000000000000ed28      0x1f0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000ed28                _DYNAMIC
+
+.got            0x000000000000ef18       0xe0
+ *(.got.plt)
+ .got.plt       0x000000000000ef18       0xb8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000ef18                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ *(.got)
+ .got           0x000000000000efd0       0x28 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ *(.igot)
+                0x000000000000f000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x000000000000f000      0x158
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000000f000        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000f000                data_start
+                0x000000000000f000                __data_start
+ .data          0x000000000000f004        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .data          0x000000000000f004        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ *fill*         0x000000000000f004        0x4 
+ .data.rel.local
+                0x000000000000f008        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+                0x000000000000f008                __dso_handle
+ .data          0x000000000000f010        0x0 hello-world.co
+ *fill*         0x000000000000f010       0x10 
+ .data.rel.local
+                0x000000000000f020       0x20 hello-world.co
+                0x000000000000f020                hello_world_process
+ .data          0x000000000000f040        0x0 contiki-native.a(contiki-main.o)
+ .data.rel      0x000000000000f040       0x20 contiki-native.a(contiki-main.o)
+                0x000000000000f040                sensors
+ .data          0x000000000000f060        0x0 contiki-native.a(button-sensor.o)
+ .data          0x000000000000f060        0x0 contiki-native.a(pir-sensor.o)
+ .data          0x000000000000f060        0x0 contiki-native.a(vib-sensor.o)
+ .data          0x000000000000f060        0x0 contiki-native.a(sensors.o)
+ .data.rel.local
+                0x000000000000f060       0x20 contiki-native.a(sensors.o)
+                0x000000000000f060                sensors_process
+ .data          0x000000000000f080        0x0 contiki-native.a(autostart.o)
+ .data          0x000000000000f080        0x0 contiki-native.a(ctimer.o)
+ .data.rel.local
+                0x000000000000f080       0x20 contiki-native.a(ctimer.o)
+                0x000000000000f080                ctimer_process
+ .data          0x000000000000f0a0        0x0 contiki-native.a(etimer.o)
+ .data.rel.local
+                0x000000000000f0a0       0x20 contiki-native.a(etimer.o)
+                0x000000000000f0a0                etimer_process
+ .data          0x000000000000f0c0        0x0 contiki-native.a(process.o)
+ .data          0x000000000000f0c0        0x0 contiki-native.a(rtimer.o)
+ .data          0x000000000000f0c0        0x0 contiki-native.a(timer.o)
+ .data          0x000000000000f0c0        0x0 contiki-native.a(serial-line.o)
+ .data.rel.local
+                0x000000000000f0c0       0x20 contiki-native.a(serial-line.o)
+                0x000000000000f0c0                serial_line_process
+ .data          0x000000000000f0e0        0x0 contiki-native.a(list.o)
+ .data          0x000000000000f0e0        0x0 contiki-native.a(ringbuf.o)
+ .data          0x000000000000f0e0        0x0 contiki-native.a(tcpip.o)
+ .data.rel.local
+                0x000000000000f0e0       0x20 contiki-native.a(tcpip.o)
+                0x000000000000f0e0                tcpip_process
+ .data          0x000000000000f100        0x0 contiki-native.a(uip.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(linkaddr.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(netstack.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(rime.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(nullmac.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(nullrdc.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(clock.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(rtimer-arch.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(nullradio.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(packetbuf.o)
+ .data          0x000000000000f100        0x0 contiki-native.a(queuebuf.o)
+ .data.rel.local
+                0x000000000000f100       0x58 contiki-native.a(queuebuf.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(abc.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(announcement.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(broadcast-annou)
+ .data          0x000000000000f158        0x0 contiki-native.a(broadcast.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(chameleon.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(channel.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(framer-nullmac.)
+ .data          0x000000000000f158        0x0 contiki-native.a(mac.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(memb.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(random.o)
+ .data          0x000000000000f158        0x0 contiki-native.a(chameleon-bitop)
+ .data          0x000000000000f158        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .data          0x000000000000f158        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x000000000000f158        0x0
+ .tm_clone_table
+                0x000000000000f158        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .tm_clone_table
+                0x000000000000f158        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+
+.data1
+ *(.data1)
+                0x000000000000f158                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x000000000000f158                . = .
+                0x000000000000f158                __bss_start = .
+
+.bss            0x000000000000f160     0x1cc0
+ *(.dynbss)
+ .dynbss        0x000000000000f160       0x28 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+                0x000000000000f160                stdout@@GLIBC_2.2.5
+                0x000000000000f180                stderr@@GLIBC_2.2.5
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000f188        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+ .bss           0x000000000000f188        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .bss           0x000000000000f188        0x1 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .bss           0x000000000000f189        0x0 hello-world.co
+ *fill*         0x000000000000f189       0x17 
+ .bss           0x000000000000f1a0       0x60 contiki-native.a(contiki-main.o)
+                0x000000000000f1a0                contiki_argv
+                0x000000000000f1a8                contiki_argc
+                0x000000000000f1ac                sensors_flags
+ .bss           0x000000000000f200        0x0 contiki-native.a(button-sensor.o)
+ .bss           0x000000000000f200        0x4 contiki-native.a(pir-sensor.o)
+ .bss           0x000000000000f204        0x4 contiki-native.a(vib-sensor.o)
+ .bss           0x000000000000f208        0xd contiki-native.a(sensors.o)
+                0x000000000000f208                sensors_event
+ .bss           0x000000000000f215        0x0 contiki-native.a(autostart.o)
+ *fill*         0x000000000000f215        0x3 
+ .bss           0x000000000000f218       0x10 contiki-native.a(ctimer.o)
+ .bss           0x000000000000f228       0x10 contiki-native.a(etimer.o)
+ *fill*         0x000000000000f238        0x8 
+ .bss           0x000000000000f240      0x343 contiki-native.a(process.o)
+                0x000000000000f240                process_current
+                0x000000000000f248                process_list
+ *fill*         0x000000000000f583        0x5 
+ .bss           0x000000000000f588        0x8 contiki-native.a(rtimer.o)
+ .bss           0x000000000000f590        0x0 contiki-native.a(timer.o)
+ *fill*         0x000000000000f590       0x10 
+ .bss           0x000000000000f5a0      0x150 contiki-native.a(serial-line.o)
+                0x000000000000f5a0                serial_line_event_message
+ .bss           0x000000000000f6f0        0x0 contiki-native.a(list.o)
+ .bss           0x000000000000f6f0        0x0 contiki-native.a(ringbuf.o)
+ *fill*         0x000000000000f6f0       0x10 
+ .bss           0x000000000000f700      0x2e0 contiki-native.a(tcpip.o)
+                0x000000000000f700                tcpip_event
+ .bss           0x000000000000f9e0      0xb42 contiki-native.a(uip.o)
+                0x000000000000f9e0                uip_acc32
+                0x000000000000fa00                uip_udp_conns
+                0x000000000000fb40                uip_udp_conn
+                0x000000000000fb60                uip_listenports
+                0x000000000000fbc0                uip_conns
+                0x0000000000010340                uip_conn
+                0x0000000000010348                uip_flags
+                0x000000000001034a                uip_slen
+                0x000000000001034c                uip_len
+                0x0000000000010350                uip_sappdata
+                0x0000000000010358                uip_appdata
+                0x0000000000010360                uip_aligned_buf
+                0x0000000000010504                uip_lladdr
+                0x000000000001050a                uip_netmask
+                0x000000000001050e                uip_draddr
+                0x0000000000010512                uip_hostaddr
+ .bss           0x0000000000010522        0x2 contiki-native.a(linkaddr.o)
+                0x0000000000010522                linkaddr_node_addr
+ .bss           0x0000000000010524        0x0 contiki-native.a(netstack.o)
+ *fill*         0x0000000000010524        0x4 
+ .bss           0x0000000000010528        0x8 contiki-native.a(rime.o)
+ .bss           0x0000000000010530        0x0 contiki-native.a(nullmac.o)
+ .bss           0x0000000000010530        0x0 contiki-native.a(nullrdc.o)
+ .bss           0x0000000000010530        0x0 contiki-native.a(clock.o)
+ .bss           0x0000000000010530        0x0 contiki-native.a(rtimer-arch.o)
+ .bss           0x0000000000010530        0x0 contiki-native.a(nullradio.o)
+ *fill*         0x0000000000010530       0x10 
+ .bss           0x0000000000010540      0x118 contiki-native.a(packetbuf.o)
+                0x0000000000010540                packetbuf_addrs
+                0x0000000000010560                packetbuf_attrs
+ *fill*         0x0000000000010658        0x8 
+ .bss           0x0000000000010660      0x6c8 contiki-native.a(queuebuf.o)
+ .bss           0x0000000000010d28        0x0 contiki-native.a(abc.o)
+ .bss           0x0000000000010d28       0x18 contiki-native.a(announcement.o)
+ .bss           0x0000000000010d40       0xd8 contiki-native.a(broadcast-annou)
+ .bss           0x0000000000010e18        0x0 contiki-native.a(broadcast.o)
+ .bss           0x0000000000010e18        0x0 contiki-native.a(chameleon.o)
+ .bss           0x0000000000010e18        0x8 contiki-native.a(channel.o)
+ .bss           0x0000000000010e20        0x0 contiki-native.a(framer-nullmac.)
+ .bss           0x0000000000010e20        0x0 contiki-native.a(mac.o)
+ .bss           0x0000000000010e20        0x0 contiki-native.a(memb.o)
+ .bss           0x0000000000010e20        0x0 contiki-native.a(random.o)
+ .bss           0x0000000000010e20        0x0 contiki-native.a(chameleon-bitop)
+ .bss           0x0000000000010e20        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .bss           0x0000000000010e20        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+                0x0000000000010e20                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000010e20                . = ALIGN (0x8)
+                0x0000000000010e20                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000012e20        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000012e20                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000012e20                . = ALIGN (0x8)
+                0x0000000000010e20                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000012e20                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x26
+ *(.comment)
+ .comment       0x0000000000000000       0x26 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+                                         0x27 (size before relaxing)
+ .comment       0x0000000000000026       0x27 hello-world.co
+ .comment       0x0000000000000026       0x27 contiki-native.a(contiki-main.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(button-sensor.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(pir-sensor.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(vib-sensor.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(sensors.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(autostart.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(ctimer.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(etimer.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(process.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(rtimer.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(timer.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(serial-line.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(list.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(ringbuf.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(tcpip.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(uip.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(linkaddr.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(netstack.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(rime.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(nullmac.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(nullrdc.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(clock.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(rtimer-arch.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(nullradio.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(packetbuf.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(queuebuf.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(abc.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(announcement.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(broadcast-annou)
+ .comment       0x0000000000000026       0x27 contiki-native.a(broadcast.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(chameleon.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(channel.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(framer-nullmac.)
+ .comment       0x0000000000000026       0x27 contiki-native.a(mac.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(memb.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(random.o)
+ .comment       0x0000000000000026       0x27 contiki-native.a(chameleon-bitop)
+ .comment       0x0000000000000026       0x27 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x720
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 hello-world.co
+ .debug_aranges
+                0x0000000000000030       0x30 contiki-native.a(contiki-main.o)
+ .debug_aranges
+                0x0000000000000060       0x30 contiki-native.a(button-sensor.o)
+ .debug_aranges
+                0x0000000000000090       0x30 contiki-native.a(pir-sensor.o)
+ .debug_aranges
+                0x00000000000000c0       0x30 contiki-native.a(vib-sensor.o)
+ .debug_aranges
+                0x00000000000000f0       0x30 contiki-native.a(sensors.o)
+ .debug_aranges
+                0x0000000000000120       0x30 contiki-native.a(autostart.o)
+ .debug_aranges
+                0x0000000000000150       0x30 contiki-native.a(ctimer.o)
+ .debug_aranges
+                0x0000000000000180       0x30 contiki-native.a(etimer.o)
+ .debug_aranges
+                0x00000000000001b0       0x30 contiki-native.a(process.o)
+ .debug_aranges
+                0x00000000000001e0       0x30 contiki-native.a(rtimer.o)
+ .debug_aranges
+                0x0000000000000210       0x30 contiki-native.a(timer.o)
+ .debug_aranges
+                0x0000000000000240       0x30 contiki-native.a(serial-line.o)
+ .debug_aranges
+                0x0000000000000270       0x30 contiki-native.a(list.o)
+ .debug_aranges
+                0x00000000000002a0       0x30 contiki-native.a(ringbuf.o)
+ .debug_aranges
+                0x00000000000002d0       0x30 contiki-native.a(tcpip.o)
+ .debug_aranges
+                0x0000000000000300       0x30 contiki-native.a(uip.o)
+ .debug_aranges
+                0x0000000000000330       0x30 contiki-native.a(linkaddr.o)
+ .debug_aranges
+                0x0000000000000360       0x30 contiki-native.a(netstack.o)
+ .debug_aranges
+                0x0000000000000390       0x30 contiki-native.a(rime.o)
+ .debug_aranges
+                0x00000000000003c0       0x30 contiki-native.a(nullmac.o)
+ .debug_aranges
+                0x00000000000003f0       0x30 contiki-native.a(nullrdc.o)
+ .debug_aranges
+                0x0000000000000420       0x30 contiki-native.a(clock.o)
+ .debug_aranges
+                0x0000000000000450       0x30 contiki-native.a(rtimer-arch.o)
+ .debug_aranges
+                0x0000000000000480       0x30 contiki-native.a(nullradio.o)
+ .debug_aranges
+                0x00000000000004b0       0x30 contiki-native.a(packetbuf.o)
+ .debug_aranges
+                0x00000000000004e0       0x30 contiki-native.a(queuebuf.o)
+ .debug_aranges
+                0x0000000000000510       0x30 contiki-native.a(abc.o)
+ .debug_aranges
+                0x0000000000000540       0x30 contiki-native.a(announcement.o)
+ .debug_aranges
+                0x0000000000000570       0x30 contiki-native.a(broadcast-annou)
+ .debug_aranges
+                0x00000000000005a0       0x30 contiki-native.a(broadcast.o)
+ .debug_aranges
+                0x00000000000005d0       0x30 contiki-native.a(chameleon.o)
+ .debug_aranges
+                0x0000000000000600       0x30 contiki-native.a(channel.o)
+ .debug_aranges
+                0x0000000000000630       0x30 contiki-native.a(framer-nullmac.)
+ .debug_aranges
+                0x0000000000000660       0x30 contiki-native.a(mac.o)
+ .debug_aranges
+                0x0000000000000690       0x30 contiki-native.a(memb.o)
+ .debug_aranges
+                0x00000000000006c0       0x30 contiki-native.a(random.o)
+ .debug_aranges
+                0x00000000000006f0       0x30 contiki-native.a(chameleon-bitop)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xe3f9
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x2f7 hello-world.co
+ .debug_info    0x00000000000002f7     0x1283 contiki-native.a(contiki-main.o)
+ .debug_info    0x000000000000157a      0x1e5 contiki-native.a(button-sensor.o)
+ .debug_info    0x000000000000175f      0x20e contiki-native.a(pir-sensor.o)
+ .debug_info    0x000000000000196d      0x1fa contiki-native.a(vib-sensor.o)
+ .debug_info    0x0000000000001b67      0x541 contiki-native.a(sensors.o)
+ .debug_info    0x00000000000020a8      0x20d contiki-native.a(autostart.o)
+ .debug_info    0x00000000000022b5      0x7b4 contiki-native.a(ctimer.o)
+ .debug_info    0x0000000000002a69      0x759 contiki-native.a(etimer.o)
+ .debug_info    0x00000000000031c2      0x721 contiki-native.a(process.o)
+ .debug_info    0x00000000000038e3      0x240 contiki-native.a(rtimer.o)
+ .debug_info    0x0000000000003b23      0x1f3 contiki-native.a(timer.o)
+ .debug_info    0x0000000000003d16      0x4fc contiki-native.a(serial-line.o)
+ .debug_info    0x0000000000004212      0x3f0 contiki-native.a(list.o)
+ .debug_info    0x0000000000004602      0x1e3 contiki-native.a(ringbuf.o)
+ .debug_info    0x00000000000047e5     0x114e contiki-native.a(tcpip.o)
+ .debug_info    0x0000000000005933     0x143d contiki-native.a(uip.o)
+ .debug_info    0x0000000000006d70      0x28a contiki-native.a(linkaddr.o)
+ .debug_info    0x0000000000006ffa      0x482 contiki-native.a(netstack.o)
+ .debug_info    0x000000000000747c      0x714 contiki-native.a(rime.o)
+ .debug_info    0x0000000000007b90      0x3ad contiki-native.a(nullmac.o)
+ .debug_info    0x0000000000007f3d      0xa0e contiki-native.a(nullrdc.o)
+ .debug_info    0x000000000000894b      0x1c7 contiki-native.a(clock.o)
+ .debug_info    0x0000000000008b12      0x2ec contiki-native.a(rtimer-arch.o)
+ .debug_info    0x0000000000008dfe      0x50c contiki-native.a(nullradio.o)
+ .debug_info    0x000000000000930a      0xb4d contiki-native.a(packetbuf.o)
+ .debug_info    0x0000000000009e57      0xcc4 contiki-native.a(queuebuf.o)
+ .debug_info    0x000000000000ab1b      0x4d8 contiki-native.a(abc.o)
+ .debug_info    0x000000000000aff3      0x607 contiki-native.a(announcement.o)
+ .debug_info    0x000000000000b5fa      0xb73 contiki-native.a(broadcast-annou)
+ .debug_info    0x000000000000c16d      0x688 contiki-native.a(broadcast.o)
+ .debug_info    0x000000000000c7f5      0x3b4 contiki-native.a(chameleon.o)
+ .debug_info    0x000000000000cba9      0x3b4 contiki-native.a(channel.o)
+ .debug_info    0x000000000000cf5d      0x3ec contiki-native.a(framer-nullmac.)
+ .debug_info    0x000000000000d349      0x160 contiki-native.a(mac.o)
+ .debug_info    0x000000000000d4a9      0x2a3 contiki-native.a(memb.o)
+ .debug_info    0x000000000000d74c      0x114 contiki-native.a(random.o)
+ .debug_info    0x000000000000d860      0xb99 contiki-native.a(chameleon-bitop)
+
+.debug_abbrev   0x0000000000000000     0x52e3
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x220 hello-world.co
+ .debug_abbrev  0x0000000000000220      0x4ad contiki-native.a(contiki-main.o)
+ .debug_abbrev  0x00000000000006cd      0x101 contiki-native.a(button-sensor.o)
+ .debug_abbrev  0x00000000000007ce      0x137 contiki-native.a(pir-sensor.o)
+ .debug_abbrev  0x0000000000000905      0x123 contiki-native.a(vib-sensor.o)
+ .debug_abbrev  0x0000000000000a28      0x311 contiki-native.a(sensors.o)
+ .debug_abbrev  0x0000000000000d39      0x14a contiki-native.a(autostart.o)
+ .debug_abbrev  0x0000000000000e83      0x246 contiki-native.a(ctimer.o)
+ .debug_abbrev  0x00000000000010c9      0x2f5 contiki-native.a(etimer.o)
+ .debug_abbrev  0x00000000000013be      0x39b contiki-native.a(process.o)
+ .debug_abbrev  0x0000000000001759      0x1a1 contiki-native.a(rtimer.o)
+ .debug_abbrev  0x00000000000018fa      0x127 contiki-native.a(timer.o)
+ .debug_abbrev  0x0000000000001a21      0x2a0 contiki-native.a(serial-line.o)
+ .debug_abbrev  0x0000000000001cc1      0x198 contiki-native.a(list.o)
+ .debug_abbrev  0x0000000000001e59       0xe9 contiki-native.a(ringbuf.o)
+ .debug_abbrev  0x0000000000001f42      0x4fd contiki-native.a(tcpip.o)
+ .debug_abbrev  0x000000000000243f      0x45a contiki-native.a(uip.o)
+ .debug_abbrev  0x0000000000002899      0x1b1 contiki-native.a(linkaddr.o)
+ .debug_abbrev  0x0000000000002a4a      0x11b contiki-native.a(netstack.o)
+ .debug_abbrev  0x0000000000002b65      0x294 contiki-native.a(rime.o)
+ .debug_abbrev  0x0000000000002df9      0x1a6 contiki-native.a(nullmac.o)
+ .debug_abbrev  0x0000000000002f9f      0x32c contiki-native.a(nullrdc.o)
+ .debug_abbrev  0x00000000000032cb      0x119 contiki-native.a(clock.o)
+ .debug_abbrev  0x00000000000033e4      0x184 contiki-native.a(rtimer-arch.o)
+ .debug_abbrev  0x0000000000003568      0x1af contiki-native.a(nullradio.o)
+ .debug_abbrev  0x0000000000003717      0x3c3 contiki-native.a(packetbuf.o)
+ .debug_abbrev  0x0000000000003ada      0x336 contiki-native.a(queuebuf.o)
+ .debug_abbrev  0x0000000000003e10      0x1e5 contiki-native.a(abc.o)
+ .debug_abbrev  0x0000000000003ff5      0x216 contiki-native.a(announcement.o)
+ .debug_abbrev  0x000000000000420b      0x2f8 contiki-native.a(broadcast-annou)
+ .debug_abbrev  0x0000000000004503      0x251 contiki-native.a(broadcast.o)
+ .debug_abbrev  0x0000000000004754      0x1e0 contiki-native.a(chameleon.o)
+ .debug_abbrev  0x0000000000004934      0x1b5 contiki-native.a(channel.o)
+ .debug_abbrev  0x0000000000004ae9      0x1a8 contiki-native.a(framer-nullmac.)
+ .debug_abbrev  0x0000000000004c91       0xcb contiki-native.a(mac.o)
+ .debug_abbrev  0x0000000000004d5c      0x18d contiki-native.a(memb.o)
+ .debug_abbrev  0x0000000000004ee9       0xc0 contiki-native.a(random.o)
+ .debug_abbrev  0x0000000000004fa9      0x33a contiki-native.a(chameleon-bitop)
+
+.debug_line     0x0000000000000000     0x5478
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0xb5 hello-world.co
+ .debug_line    0x00000000000000b5      0x44c contiki-native.a(contiki-main.o)
+ .debug_line    0x0000000000000501       0x8e contiki-native.a(button-sensor.o)
+ .debug_line    0x000000000000058f       0x9a contiki-native.a(pir-sensor.o)
+ .debug_line    0x0000000000000629       0x96 contiki-native.a(vib-sensor.o)
+ .debug_line    0x00000000000006bf      0x2a5 contiki-native.a(sensors.o)
+ .debug_line    0x0000000000000964       0xee contiki-native.a(autostart.o)
+ .debug_line    0x0000000000000a52      0x2ab contiki-native.a(ctimer.o)
+ .debug_line    0x0000000000000cfd      0x36c contiki-native.a(etimer.o)
+ .debug_line    0x0000000000001069      0x3f2 contiki-native.a(process.o)
+ .debug_line    0x000000000000145b       0xe1 contiki-native.a(rtimer.o)
+ .debug_line    0x000000000000153c       0xdd contiki-native.a(timer.o)
+ .debug_line    0x0000000000001619      0x1c4 contiki-native.a(serial-line.o)
+ .debug_line    0x00000000000017dd      0x288 contiki-native.a(list.o)
+ .debug_line    0x0000000000001a65      0x13f contiki-native.a(ringbuf.o)
+ .debug_line    0x0000000000001ba4      0x524 contiki-native.a(tcpip.o)
+ .debug_line    0x00000000000020c8     0x1426 contiki-native.a(uip.o)
+ .debug_line    0x00000000000034ee       0xae contiki-native.a(linkaddr.o)
+ .debug_line    0x000000000000359c       0x82 contiki-native.a(netstack.o)
+ .debug_line    0x000000000000361e      0x1a7 contiki-native.a(rime.o)
+ .debug_line    0x00000000000037c5       0xa5 contiki-native.a(nullmac.o)
+ .debug_line    0x000000000000386a      0x1ce contiki-native.a(nullrdc.o)
+ .debug_line    0x0000000000003a38       0x9e contiki-native.a(clock.o)
+ .debug_line    0x0000000000003ad6       0xdc contiki-native.a(rtimer-arch.o)
+ .debug_line    0x0000000000003bb2       0xfd contiki-native.a(nullradio.o)
+ .debug_line    0x0000000000003caf      0x4b0 contiki-native.a(packetbuf.o)
+ .debug_line    0x000000000000415f      0x29b contiki-native.a(queuebuf.o)
+ .debug_line    0x00000000000043fa       0xf7 contiki-native.a(abc.o)
+ .debug_line    0x00000000000044f1      0x1cd contiki-native.a(announcement.o)
+ .debug_line    0x00000000000046be      0x272 contiki-native.a(broadcast-annou)
+ .debug_line    0x0000000000004930      0x10a contiki-native.a(broadcast.o)
+ .debug_line    0x0000000000004a3a       0xd7 contiki-native.a(chameleon.o)
+ .debug_line    0x0000000000004b11      0x112 contiki-native.a(channel.o)
+ .debug_line    0x0000000000004c23       0xe4 contiki-native.a(framer-nullmac.)
+ .debug_line    0x0000000000004d07       0x7f contiki-native.a(mac.o)
+ .debug_line    0x0000000000004d86      0x1ab contiki-native.a(memb.o)
+ .debug_line    0x0000000000004f31       0x6f contiki-native.a(random.o)
+ .debug_line    0x0000000000004fa0      0x4d8 contiki-native.a(chameleon-bitop)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000     0x2228
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x168 hello-world.co
+                                        0x1d9 (size before relaxing)
+ .debug_str     0x0000000000000168      0x50f contiki-native.a(contiki-main.o)
+                                        0x761 (size before relaxing)
+ .debug_str     0x0000000000000677       0x1d contiki-native.a(button-sensor.o)
+                                        0x14b (size before relaxing)
+ .debug_str     0x0000000000000694       0x26 contiki-native.a(pir-sensor.o)
+                                        0x161 (size before relaxing)
+ .debug_str     0x00000000000006ba       0x13 contiki-native.a(vib-sensor.o)
+                                        0x14e (size before relaxing)
+ .debug_str     0x00000000000006cd       0xb6 contiki-native.a(sensors.o)
+                                        0x285 (size before relaxing)
+ .debug_str     0x0000000000000783       0x1c contiki-native.a(autostart.o)
+                                        0x186 (size before relaxing)
+ .debug_str     0x000000000000079f      0x132 contiki-native.a(ctimer.o)
+                                        0x2d0 (size before relaxing)
+ .debug_str     0x00000000000008d1       0xd0 contiki-native.a(etimer.o)
+                                        0x31a (size before relaxing)
+ .debug_str     0x00000000000009a1       0xdb contiki-native.a(process.o)
+                                        0x2a3 (size before relaxing)
+ .debug_str     0x0000000000000a7c       0xbe contiki-native.a(rtimer.o)
+                                        0x1d6 (size before relaxing)
+ .debug_str     0x0000000000000b3a       0x10 contiki-native.a(timer.o)
+                                        0x169 (size before relaxing)
+ .debug_str     0x0000000000000b4a       0x94 contiki-native.a(serial-line.o)
+                                        0x293 (size before relaxing)
+ .debug_str     0x0000000000000bde       0x69 contiki-native.a(list.o)
+                                        0x13e (size before relaxing)
+ .debug_str     0x0000000000000c47       0x1e contiki-native.a(ringbuf.o)
+                                        0x179 (size before relaxing)
+ .debug_str     0x0000000000000c65      0x309 contiki-native.a(tcpip.o)
+                                        0x5bb (size before relaxing)
+ .debug_str     0x0000000000000f6e      0x2a6 contiki-native.a(uip.o)
+                                        0x65f (size before relaxing)
+ .debug_str     0x0000000000001214       0x4f contiki-native.a(linkaddr.o)
+                                        0x18c (size before relaxing)
+ .debug_str     0x0000000000001263       0xf4 contiki-native.a(netstack.o)
+                                        0x2e3 (size before relaxing)
+ .debug_str     0x0000000000001357      0x183 contiki-native.a(rime.o)
+                                        0x3aa (size before relaxing)
+ .debug_str     0x00000000000014da       0x1a contiki-native.a(nullmac.o)
+                                        0x1ea (size before relaxing)
+ .debug_str     0x00000000000014f4      0x3fb contiki-native.a(nullrdc.o)
+                                        0x7b1 (size before relaxing)
+ .debug_str     0x00000000000018ef       0x27 contiki-native.a(clock.o)
+                                        0x173 (size before relaxing)
+ .debug_str     0x0000000000001916       0xa7 contiki-native.a(rtimer-arch.o)
+                                        0x252 (size before relaxing)
+ .debug_str     0x00000000000019bd       0x32 contiki-native.a(nullradio.o)
+                                        0x28c (size before relaxing)
+ .debug_str     0x00000000000019ef      0x1c6 contiki-native.a(packetbuf.o)
+                                        0x6ef (size before relaxing)
+ .debug_str     0x0000000000001bb5      0x177 contiki-native.a(queuebuf.o)
+                                        0x737 (size before relaxing)
+ .debug_str     0x0000000000001d2c       0x6a contiki-native.a(abc.o)
+                                        0x4f2 (size before relaxing)
+ .debug_str     0x0000000000001d96      0x17c contiki-native.a(announcement.o)
+                                        0x340 (size before relaxing)
+ .debug_str     0x0000000000001f12      0x19b contiki-native.a(broadcast-annou)
+                                        0x545 (size before relaxing)
+ .debug_str     0x00000000000020ad       0x2b contiki-native.a(broadcast.o)
+                                        0x589 (size before relaxing)
+ .debug_str     0x00000000000020d8       0x41 contiki-native.a(chameleon.o)
+                                        0x4e3 (size before relaxing)
+ .debug_str     0x0000000000002119       0x2e contiki-native.a(channel.o)
+                                        0x233 (size before relaxing)
+ .debug_str     0x0000000000002147       0x17 contiki-native.a(framer-nullmac.)
+                                        0x4bc (size before relaxing)
+ .debug_str     0x000000000000215e      0x19c contiki-native.a(mac.o)
+ .debug_str     0x000000000000215e       0x16 contiki-native.a(memb.o)
+                                        0x166 (size before relaxing)
+ .debug_str     0x0000000000002174       0x17 contiki-native.a(random.o)
+                                        0x142 (size before relaxing)
+ .debug_str     0x000000000000218b       0x9d contiki-native.a(chameleon-bitop)
+                                        0x61e (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x0000000000000000      0x8b2
+ *(.debug_line_str)
+ .debug_line_str
+                0x0000000000000000       0xae hello-world.co
+                                         0xfb (size before relaxing)
+ .debug_line_str
+                0x00000000000000ae      0x240 contiki-native.a(contiki-main.o)
+                                        0x342 (size before relaxing)
+ .debug_line_str
+                0x00000000000002ee       0x44 contiki-native.a(button-sensor.o)
+                                        0x10d (size before relaxing)
+ .debug_line_str
+                0x0000000000000332       0x27 contiki-native.a(pir-sensor.o)
+                                        0x101 (size before relaxing)
+ .debug_line_str
+                0x0000000000000359       0x27 contiki-native.a(vib-sensor.o)
+                                        0x101 (size before relaxing)
+ .debug_line_str
+                0x0000000000000380       0x31 contiki-native.a(sensors.o)
+                                        0x12d (size before relaxing)
+ .debug_line_str
+                0x00000000000003b1       0x2a contiki-native.a(autostart.o)
+                                         0xd0 (size before relaxing)
+ .debug_line_str
+                0x00000000000003db       0x1f contiki-native.a(ctimer.o)
+                                        0x120 (size before relaxing)
+ .debug_line_str
+                0x00000000000003fa       0x20 contiki-native.a(etimer.o)
+                                        0x107 (size before relaxing)
+ .debug_line_str
+                0x000000000000041a       0x19 contiki-native.a(process.o)
+                                         0xca (size before relaxing)
+ .debug_line_str
+                0x0000000000000433       0x18 contiki-native.a(rtimer.o)
+                                         0xb5 (size before relaxing)
+ .debug_line_str
+                0x000000000000044b       0x17 contiki-native.a(timer.o)
+                                         0xe0 (size before relaxing)
+ .debug_line_str
+                0x0000000000000462       0x36 contiki-native.a(serial-line.o)
+                                        0x14a (size before relaxing)
+ .debug_line_str
+                0x0000000000000498       0x16 contiki-native.a(list.o)
+                                         0xad (size before relaxing)
+ .debug_line_str
+                0x00000000000004ae       0x19 contiki-native.a(ringbuf.o)
+                                         0xf3 (size before relaxing)
+ .debug_line_str
+                0x00000000000004c7       0x32 contiki-native.a(tcpip.o)
+                                        0x15e (size before relaxing)
+ .debug_line_str
+                0x00000000000004f9       0x2e contiki-native.a(uip.o)
+                                        0x174 (size before relaxing)
+ .debug_line_str
+                0x0000000000000527       0x29 contiki-native.a(linkaddr.o)
+                                        0x13b (size before relaxing)
+ .debug_line_str
+                0x0000000000000550       0x1a contiki-native.a(netstack.o)
+                                        0x129 (size before relaxing)
+ .debug_line_str
+                0x000000000000056a       0x98 contiki-native.a(rime.o)
+                                        0x1c7 (size before relaxing)
+ .debug_line_str
+                0x0000000000000602       0x30 contiki-native.a(nullmac.o)
+                                         0xed (size before relaxing)
+ .debug_line_str
+                0x0000000000000632       0x30 contiki-native.a(nullrdc.o)
+                                        0x19d (size before relaxing)
+ .debug_line_str
+                0x0000000000000662       0x27 contiki-native.a(clock.o)
+                                        0x147 (size before relaxing)
+ .debug_line_str
+                0x0000000000000689       0x3d contiki-native.a(rtimer-arch.o)
+                                        0x19f (size before relaxing)
+ .debug_line_str
+                0x00000000000006c6       0x27 contiki-native.a(nullradio.o)
+                                         0xfb (size before relaxing)
+ .debug_line_str
+                0x00000000000006ed       0x1b contiki-native.a(packetbuf.o)
+                                        0x156 (size before relaxing)
+ .debug_line_str
+                0x0000000000000708       0x21 contiki-native.a(queuebuf.o)
+                                        0x160 (size before relaxing)
+ .debug_line_str
+                0x0000000000000729       0x1a contiki-native.a(abc.o)
+                                        0x120 (size before relaxing)
+ .debug_line_str
+                0x0000000000000743       0x23 contiki-native.a(announcement.o)
+                                        0x14a (size before relaxing)
+ .debug_line_str
+                0x0000000000000766       0x42 contiki-native.a(broadcast-annou)
+                                        0x24b (size before relaxing)
+ .debug_line_str
+                0x00000000000007a8       0x20 contiki-native.a(broadcast.o)
+                                        0x142 (size before relaxing)
+ .debug_line_str
+                0x00000000000007c8       0x20 contiki-native.a(chameleon.o)
+                                        0x131 (size before relaxing)
+ .debug_line_str
+                0x00000000000007e8       0x1e contiki-native.a(channel.o)
+                                        0x143 (size before relaxing)
+ .debug_line_str
+                0x0000000000000806       0x35 contiki-native.a(framer-nullmac.)
+                                        0x14c (size before relaxing)
+ .debug_line_str
+                0x000000000000083b       0x19 contiki-native.a(mac.o)
+                                         0xb5 (size before relaxing)
+ .debug_line_str
+                0x0000000000000854       0x16 contiki-native.a(memb.o)
+                                        0x120 (size before relaxing)
+ .debug_line_str
+                0x000000000000086a       0x21 contiki-native.a(random.o)
+                                         0xb1 (size before relaxing)
+ .debug_line_str
+                0x000000000000088b       0x27 contiki-native.a(chameleon-bitop)
+                                        0x196 (size before relaxing)
+
+.debug_loclists
+                0x0000000000000000     0x35ff
+ *(.debug_loclists)
+ .debug_loclists
+                0x0000000000000000       0x98 hello-world.co
+ .debug_loclists
+                0x0000000000000098      0x342 contiki-native.a(contiki-main.o)
+ .debug_loclists
+                0x00000000000003da       0x1e contiki-native.a(pir-sensor.o)
+ .debug_loclists
+                0x00000000000003f8      0x193 contiki-native.a(sensors.o)
+ .debug_loclists
+                0x000000000000058b       0xdc contiki-native.a(autostart.o)
+ .debug_loclists
+                0x0000000000000667      0x266 contiki-native.a(ctimer.o)
+ .debug_loclists
+                0x00000000000008cd      0x294 contiki-native.a(etimer.o)
+ .debug_loclists
+                0x0000000000000b61      0x216 contiki-native.a(process.o)
+ .debug_loclists
+                0x0000000000000d77       0xa2 contiki-native.a(rtimer.o)
+ .debug_loclists
+                0x0000000000000e19       0x92 contiki-native.a(timer.o)
+ .debug_loclists
+                0x0000000000000eab      0x153 contiki-native.a(serial-line.o)
+ .debug_loclists
+                0x0000000000000ffe      0x199 contiki-native.a(list.o)
+ .debug_loclists
+                0x0000000000001197       0x28 contiki-native.a(ringbuf.o)
+ .debug_loclists
+                0x00000000000011bf      0x573 contiki-native.a(tcpip.o)
+ .debug_loclists
+                0x0000000000001732      0x56b contiki-native.a(uip.o)
+ .debug_loclists
+                0x0000000000001c9d       0x62 contiki-native.a(linkaddr.o)
+ .debug_loclists
+                0x0000000000001cff      0x15d contiki-native.a(rime.o)
+ .debug_loclists
+                0x0000000000001e5c       0x42 contiki-native.a(nullmac.o)
+ .debug_loclists
+                0x0000000000001e9e      0x142 contiki-native.a(nullrdc.o)
+ .debug_loclists
+                0x0000000000001fe0       0x3a contiki-native.a(rtimer-arch.o)
+ .debug_loclists
+                0x000000000000201a      0x538 contiki-native.a(packetbuf.o)
+ .debug_loclists
+                0x0000000000002552      0x1a6 contiki-native.a(queuebuf.o)
+ .debug_loclists
+                0x00000000000026f8      0x125 contiki-native.a(abc.o)
+ .debug_loclists
+                0x000000000000281d      0x1b3 contiki-native.a(announcement.o)
+ .debug_loclists
+                0x00000000000029d0      0x1fb contiki-native.a(broadcast-annou)
+ .debug_loclists
+                0x0000000000002bcb      0x144 contiki-native.a(broadcast.o)
+ .debug_loclists
+                0x0000000000002d0f       0x64 contiki-native.a(chameleon.o)
+ .debug_loclists
+                0x0000000000002d73       0xdd contiki-native.a(channel.o)
+ .debug_loclists
+                0x0000000000002e50       0x32 contiki-native.a(framer-nullmac.)
+ .debug_loclists
+                0x0000000000002e82       0x85 contiki-native.a(mac.o)
+ .debug_loclists
+                0x0000000000002f07       0xe2 contiki-native.a(memb.o)
+ .debug_loclists
+                0x0000000000002fe9       0x1e contiki-native.a(random.o)
+ .debug_loclists
+                0x0000000000003007      0x5f8 contiki-native.a(chameleon-bitop)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x0000000000000000      0x1be
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x0000000000000000       0x13 hello-world.co
+ .debug_rnglists
+                0x0000000000000013       0x2d contiki-native.a(contiki-main.o)
+ .debug_rnglists
+                0x0000000000000040       0x2c contiki-native.a(sensors.o)
+ .debug_rnglists
+                0x000000000000006c       0x14 contiki-native.a(ctimer.o)
+ .debug_rnglists
+                0x0000000000000080       0x27 contiki-native.a(etimer.o)
+ .debug_rnglists
+                0x00000000000000a7       0x17 contiki-native.a(process.o)
+ .debug_rnglists
+                0x00000000000000be       0x21 contiki-native.a(serial-line.o)
+ .debug_rnglists
+                0x00000000000000df       0x2c contiki-native.a(tcpip.o)
+ .debug_rnglists
+                0x000000000000010b       0x38 contiki-native.a(uip.o)
+ .debug_rnglists
+                0x0000000000000143       0x4b contiki-native.a(packetbuf.o)
+ .debug_rnglists
+                0x000000000000018e       0x16 contiki-native.a(queuebuf.o)
+ .debug_rnglists
+                0x00000000000001a4       0x1a contiki-native.a(memb.o)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(hello-world.native elf64-x86-64)
