@@ -155,10 +155,13 @@ make_tcp_stats(void *arg)
 {
   struct uip_conn *conn;
   struct httpd_state *s = (struct httpd_state *)arg;
+#if NETSTACK_CONF_WITH_IPV6
+  char buf[48];
+#endif
+
   conn = &uip_conns[s->u.count];
 
-#if UIP_CONF_IPV6
-  char buf[48];
+#if NETSTACK_CONF_WITH_IPV6
   httpd_sprint_ip6(conn->ripaddr, buf);
   return snprintf((char *)uip_appdata, uip_mss(),
          "<tr align=\"center\"><td>%d</td><td>%s:%u</td><td>%s</td><td>%u</td><td>%u</td><td>%c %c</td></tr>\r\n",
@@ -184,7 +187,7 @@ make_tcp_stats(void *arg)
          conn->timer,
         (uip_outstanding(conn))? '*':' ',
         (uip_stopped(conn))? '!':' ');
-#endif /* UIP_CONF_IPV6 */
+#endif /* NETSTACK_CONF_WITH_IPV6 */
 }
 /*---------------------------------------------------------------------------*/
 static
@@ -226,7 +229,7 @@ PT_THREAD(processes(struct httpd_state *s, char *ptr))
   }
   PSOCK_END(&s->sout);
 }
-#if WEBSERVER_CONF_STATUSPAGE && UIP_CONF_IPV6
+#if WEBSERVER_CONF_STATUSPAGE && NETSTACK_CONF_WITH_IPV6
 /* These cgi's are invoked by the status.shtml page in /apps/webserver/httpd-fs.
  * To keep the webserver build small that 160 byte page is not present in the
  * default httpd-fsdata.c file. Run the PERL script /../../tools/makefsdata from the
@@ -249,8 +252,9 @@ extern uip_ds6_netif_t uip_ds6_if;
 static unsigned short
 make_addresses(void *p)
 {
-uint8_t i,j=0;
-uint16_t numprinted;
+  uint8_t i, j = 0;
+  uint16_t numprinted;
+
   numprinted = httpd_snprintf((char *)uip_appdata, uip_mss(),httpd_cgi_addrh);
   for (i=0; i<UIP_DS6_ADDR_NB;i++) {
     if (uip_ds6_if.addr_list[i].isused) {
@@ -277,7 +281,7 @@ PT_THREAD(addresses(struct httpd_state *s, char *ptr))
 static unsigned short
 make_neighbors(void *p)
 {
-uint8_t i,j=0;
+uint8_t j=0;
 uint16_t numprinted;
   numprinted = httpd_snprintf((char *)uip_appdata, uip_mss(),httpd_cgi_addrh);
   uip_ds6_nbr_t *nbr;
@@ -309,7 +313,7 @@ make_routes(void *p)
   static const char httpd_cgi_rtes1[] HTTPD_STRING_ATTR = "(%u (via ";
   static const char httpd_cgi_rtes2[] HTTPD_STRING_ATTR = ") %lus<br>";
   static const char httpd_cgi_rtes3[] HTTPD_STRING_ATTR = ")<br>";
-  uint8_t i,j=0;
+  uint8_t j=0;
   uint16_t numprinted;
   uip_ds6_route_t *r;
 
@@ -320,7 +324,7 @@ make_routes(void *p)
     j++;
     numprinted += httpd_cgi_sprint_ip6(r->ipaddr, uip_appdata + numprinted);
     numprinted += httpd_snprintf((char *)uip_appdata+numprinted, uip_mss()-numprinted, httpd_cgi_rtes1, r->length);
-    numprinted += httpd_cgi_sprint_ip6(uip_ds6_route_nexthop(r), uip_appdata + numprinted);
+    numprinted += httpd_cgi_sprint_ip6(*(uip_ds6_route_nexthop(r)), uip_appdata + numprinted);
     if(r->state.lifetime < 3600) {
       numprinted += httpd_snprintf((char *)uip_appdata+numprinted, uip_mss()-numprinted, httpd_cgi_rtes2, r->state.lifetime);
     } else {
@@ -357,7 +361,7 @@ httpd_cgi_add(struct httpd_cgi_call *c)
   }
 }
 /*---------------------------------------------------------------------------*/
-#if WEBSERVER_CONF_STATUSPAGE && UIP_CONF_IPV6
+#if WEBSERVER_CONF_STATUSPAGE && NETSTACK_CONF_WITH_IPV6
 static const char   adrs_name[] HTTPD_STRING_ATTR = "addresses";
 static const char   nbrs_name[] HTTPD_STRING_ATTR = "neighbors";
 static const char   rtes_name[] HTTPD_STRING_ATTR = "routes";
@@ -365,7 +369,7 @@ static const char   rtes_name[] HTTPD_STRING_ATTR = "routes";
 HTTPD_CGI_CALL(file, file_name, file_stats);
 HTTPD_CGI_CALL(tcp, tcp_name, tcp_stats);
 HTTPD_CGI_CALL(proc, proc_name, processes);
-#if WEBSERVER_CONF_STATUSPAGE && UIP_CONF_IPV6
+#if WEBSERVER_CONF_STATUSPAGE && NETSTACK_CONF_WITH_IPV6
 HTTPD_CGI_CALL(adrs, adrs_name, addresses);
 HTTPD_CGI_CALL(nbrs, nbrs_name, neighbors);
 HTTPD_CGI_CALL(rtes, rtes_name, routes);
@@ -377,7 +381,7 @@ httpd_cgi_init(void)
   httpd_cgi_add(&file);
   httpd_cgi_add(&tcp);
   httpd_cgi_add(&proc);
-#if WEBSERVER_CONF_STATUSPAGE && UIP_CONF_IPV6
+#if WEBSERVER_CONF_STATUSPAGE && NETSTACK_CONF_WITH_IPV6
   httpd_cgi_add(&adrs);
   httpd_cgi_add(&nbrs);
   httpd_cgi_add(&rtes);
